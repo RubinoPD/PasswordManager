@@ -57,6 +57,11 @@ namespace PasswordManager
         {
             PasswordBox.Password = PasswordGenerator.Generate();
         }
+
+        private void copyPass_Click(object sender, RoutedEventArgs e)
+        {
+            ClipboardHelper.CopyToClipboard(PasswordBox.Password);
+        }
     }
 }
 

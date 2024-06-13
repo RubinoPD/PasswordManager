@@ -14,6 +14,7 @@
             <PasswordBox x:Name="PasswordBox" Margin="10 0 10 0"/>
             <Button Content="Register" Click="RegisterButton_Click" Margin="10"/>
             <Button x:Name="randomGenPass" Content="Generuoti slaptazodi" Click="randomGenPass_Click" Width="380"/>
+            <Button x:Name="copyPass" Content="Copy Password to Clipboard" Width="380" Click="copyPass_Click"/>
         </StackPanel>
     </Grid>
 </Window>
