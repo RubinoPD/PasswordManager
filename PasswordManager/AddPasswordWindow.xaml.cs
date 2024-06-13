@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+
 namespace PasswordManager
 {
     public partial class AddPasswordWindow : Window
@@ -40,6 +41,11 @@ namespace PasswordManager
             DataManager.AddPasswordEntry(newEntry);
             DataManager.Save();
             this.Close();
+        }
+
+        private void randomPassBtn_Click(object sender, RoutedEventArgs e)
+        {
+           PasswordTextBox.Text = PasswordGenerator.Generate();
         }
     }
 }
