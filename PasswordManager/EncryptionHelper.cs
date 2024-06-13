@@ -71,7 +71,7 @@ namespace PasswordManager
 
      
         
-        // Extra, not used in the project
+        
         public static void EncryptFile(string inputFile, string key)
         {
             using (Aes aes = Aes.Create())
