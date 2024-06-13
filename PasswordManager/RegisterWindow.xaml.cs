@@ -53,7 +53,10 @@ namespace PasswordManager
             this.Close();
         }
 
-        
+        private void randomGenPass_Click(object sender, RoutedEventArgs e)
+        {
+            PasswordBox.Password = PasswordGenerator.Generate();
+        }
     }
 }
 
